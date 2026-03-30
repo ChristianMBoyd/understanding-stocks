@@ -120,9 +120,19 @@ I won't go much further fleshing out the Wikipedia page, but want to keep the li
 
 One of the links that piqued my interest on Wikipedia's CAPM page \cite{CAPM2026} is the Arbitrage Pricing Model \cite{APT2026}.  The APT is apparently based on the {\it Law Of One Price} (LOOP), where identical goods sold in different markets (e.g., locations, vendors, etc.) should be priced identically when expressed in the same currency.  The LOOP only holds insofar as taxes, regulations, transaction costs, and all other trade frictions or market manipulations are absent, as it represents the transactional ideal where all arbitrage opportunities have reach a single price equilibrium.
 
-The Arbitrage Pricing Theory (APT) itself, seems like a generic conceptual framework for how returns ought to be related to intrinsic market factors, and {\it risk premiums} associated with those factors.  I'm having some difficulty making sense of the various representations in the article \cite{APT2026}, but will make my best-effort attempt to summarize my understanding in what follows.  Consider an asset\footnote{As far as I can currently tell, there's no particular reason to invoke the multi-dimensional/portfolio analysis stated in the Wikipedia article since all averages and formulas are per-asset anyway.} with rate of return $r$.  Then the APT states that the rates of return $r$ can be expressed in terms of $m\le n$ factors, $f_m$, 
+The Arbitrage Pricing Theory (APT) itself, seems like a generic conceptual framework for how returns ought to be related to intrinsic market factors, and {\it risk premiums} associated with those factors.  I'm having some difficulty making sense of the various representations in the article \cite{APT2026}, but will make my best-effort attempt to summarize my understanding in what follows.  Both the Wikipedi article and the original paper \cite{Ross1976} emphasize the multi-dimensional nature of a portfolio of assets, but I'm currently struggling to see the reason and so will start by considering a single asset whose rate of return $r$ is under study.  The APT states that, as far as returns as concerned, the rate of return can be understood as arising from the risk-free rate $r_f$, a number of {\it factors} $f_i$, and an error term $\epsilon$,
+\begin{equation}
+    r = r_f + \epsilon + \sum_i \beta_i f_i \quad.
+\end{equation}
+The rate of return $r$, the error $\epsilon$, and the factors $f_i$ are random variables.  The risk-free rate $r_f$ and $\beta_i$ are merely coefficients, where the $\beta_i$ are $\beta$-like in that they denote the sensitivity of the asset to the $i$th factor, $f_i$.  The major consequence of this framework is that the expected return is given by the risk free rate $r_f$, the $\beta$-like $\beta_i$ coefficients, and the {\it risk premiums} $\mu_i$ associated with the factors $f_i$.  I.e.,
+\begin{equation}
+    \langle r \rangle = r_f + \sum_i \beta_i \mu_i \quad ,
+\end{equation}
+where we presume $\langle \epsilon \rangle = 0$ for the error term.
+
+The main distinction of the APT relative to the CAPM that I currently see is that it relaxes the prescriptive power of CAPM to accommodate a multi-factor explanation for asset prices.  My current understanding is that this kind of framework underlies the modern multi-factor models like the 5-factor model \cite{Fama2015}.  For example, the framework doesn't say what the underlying factors are, aside from suggestively naming the resulting coefficients {\it risk premiums}.  All that we know is there are a linear combination of factors, which increase the return of an asset relative to a reference risk-free rate.  
 
 
 \subsection{S. Ross - The arbitrage theory of capital asset pricing}
 
-\note{[Todo]}: read \cite{Ross1976} after above\ldots
+\note{[Todo]}: read \cite{Ross1976} after above\ldots  See also the working paper \cite{Ross1971}, where the rigorous framework was apparently fleshed out.
