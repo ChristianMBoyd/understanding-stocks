@@ -142,6 +142,8 @@ The main distinction of the APT relative to the CAPM that I currently see is tha
 
 In \cite{Sammon2026}, the authors consider the interesting case that index funds which blindly track the market necessarily {\it time} the market through rebalanacing.  Naturally, they suspect that these timings are unfavorable, as shares are presumably issued when prices are high and repurchased when prices are low.  The authors test this hypothesis in the context of an relationship they claim between a value-based market portfolio and owning an equal percentage of shares outstanding in all companies, or an ownership ratio.  Through this relationship, they state that index funds (or indexes themselves) must rebalance to maintain their desired ownership ratio.
 
+\subsubsection{Notes on the Introduction}
+
 They introduce the concept of {\it Market Tracking Error} (MTE), or the inability of popular value-weighted indexes\footnote{I have always said/though ``indices,'' but it seems like the preferred nomenclature is ``indexes.''} to track the actual rapid day-to-day change in the stock market.  The two claim there is a 75-300 bps (or, 0.75\% - 3\%) MTE, which is much greater than the index tracking error (index funds tracking the indexes) stated as 5 bps (0.05\%) or less.  They further claim that, beyond MTE, there is a real performance drag of 46-69 bps (0.46\%-0.69\%) in annualized terms.  They state that the improved returns are dominated by using delayed shares outstanding data (diminishing returns kicking in around 2 years of delayed data) vs. rebalancing less frequently, which is fascinating.
 
 The authors introduce the {\it Market Information Ratio} (MIR), which they define as an index's return minus the daily-rebalanced market return divided by the MTE.  They further claim that delaying updating the shares outstanding data by 1-2 years appears to maximize the MIR.
@@ -149,6 +151,12 @@ The authors introduce the {\it Market Information Ratio} (MIR), which they defin
 \note{[On buybacks and issuance]}: there are a lot of references in section 1.1 on related literature to papers on buybacks/issuance as containing predictive power for future returns.  These would be good papers to look into.
 
 It's worth noting that it seems like they do a lot of data cleaning.  This is probably legitimate but they ``remove outliers,'' which may have some impact on the results.  They frequently reference CSRP (Center for Research in Security Prices), Thomson Reuters, and S\&P for data.
+
+\note{[Thoughts on implications of the index lag]}: does the index drag relative to using delayed shares outstanding relate more to market inefficiency, bad timing by management, or simply a long response time for the market to correct the price based on the updated share count?  For example, is this increased performance for delayed values a representation that companies tend to issue and repurchase stock at inopportune times, where buybacks precede underperformance and issuance overperformance?  Or do investors (broadly) have a tough time influencing the stock price due to issuance/repurchase, where additional buy/sell signals due to the open-market transactions aren't sufficient to move the needle?
+
+\subsubsection{Notes on Conceptual Framework}
+
+Their ownership ratio definition seems quite sensible.  Roughly, if an index is meant to weight their portfolio by market capitalization, then they are necessarily sensitive to changes in shares outstanding as they as part of the definition of the market capitalization.  I think the necessity of the ownership ratio is even more important when taking into account that indexes often track the market capitalization implied by the openly-traded shares, or a stock's {\it float}.  This value is even more susceptible to fluctuations during open-mark repurchases or issuance.
 
 
 \subsection{D. Ikenberry, et al - Market underreaction to open market share repurchases}
