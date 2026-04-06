@@ -152,11 +152,19 @@ The authors introduce the {\it Market Information Ratio} (MIR), which they defin
 
 It's worth noting that it seems like they do a lot of data cleaning.  This is probably legitimate but they ``remove outliers,'' which may have some impact on the results.  They frequently reference CSRP (Center for Research in Security Prices), Thomson Reuters, and S\&P for data.
 
-\note{[Thoughts on implications of the index lag]}: does the index drag relative to using delayed shares outstanding relate more to market inefficiency, bad timing by management, or simply a long response time for the market to correct the price based on the updated share count?  For example, is this increased performance for delayed values a representation that companies tend to issue and repurchase stock at inopportune times, where buybacks precede underperformance and issuance overperformance?  Or do investors (broadly) have a tough time influencing the stock price due to issuance/repurchase, where additional buy/sell signals due to the open-market transactions aren't sufficient to move the needle?
+\note{[Thoughts on implications of the index lag]}: does the index drag relative to using delayed shares outstanding relate more to market inefficiency, bad timing by management, or simply a long response time for the market to correct the price based on the updated share count?  For example, is this increased performance for delayed values a representation that companies tend to issue and repurchase stock at inopportune times, where buybacks precede underperformance and issuance overperformance?  Or do investors (broadly) have a tough time influencing the stock price due to issuance/repurchase, where additional buy/sell signals due to the open-market transactions aren't sufficient to move the needle?  \note{[Note]}: this seems to be discussed in section 4.
 
 \subsubsection{Notes on Conceptual Framework}
 
 Their ownership ratio definition seems quite sensible.  Roughly, if an index is meant to weight their portfolio by market capitalization, then they are necessarily sensitive to changes in shares outstanding as they as part of the definition of the market capitalization.  I think the necessity of the ownership ratio is even more important when taking into account that indexes often track the market capitalization implied by the openly-traded shares, or a stock's {\it float}.  This value is even more susceptible to fluctuations during open-mark repurchases or issuance.
+
+\subsubsection{Notes on the portfolio analysis}
+
+There is an underperformance of roughly -4\% for the portfolio that isolates the amount of the fund dedicated to rebalancing.  The authors suggest that roughly 10\%-15\% of a total fund is involved in rebalancing for any given period (e.g., a quarter), so that this amounts to the roughly 40 bps, or 0.4\% under-performance of value-weighted index funds due to timing the market.
+
+\subsubsection{Notes on designing a better index}
+
+\note{[Todo]}: see if the authors can recoup this $\sim40$ bps under performance, or if they can construct rebalancing rules for an index fund that out-performs existing implementations by roughly 0.4\% in annualized terms.
 
 
 \subsection{D. Ikenberry, et al - Market underreaction to open market share repurchases}
